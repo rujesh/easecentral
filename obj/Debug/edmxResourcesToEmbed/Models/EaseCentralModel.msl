@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="EaseCentralModelStoreContainer" CdmEntityContainer="EaseCentralEntities">
+    <EntitySetMapping Name="Favorites">
+      <EntityTypeMapping TypeName="EaseCentralModel.Favorite">
+        <MappingFragment StoreEntitySet="Favorite">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="reddit_id" ColumnName="reddit_id" />
+          <ScalarProperty Name="tag" ColumnName="tag" />
+          <ScalarProperty Name="permalink" ColumnName="permalink" />
+          <ScalarProperty Name="url" ColumnName="url" />
+          <ScalarProperty Name="author" ColumnName="author" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
