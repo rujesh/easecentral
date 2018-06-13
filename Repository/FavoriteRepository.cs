@@ -18,8 +18,7 @@ namespace EaseCentral.Repository
         public async Task<int> CreateAsync(Favorite favorite)
         {
             _dbContext.Favorites.Add(favorite);
-            await _dbContext.SaveChangesAsync();
-            return 1;
+            return await _dbContext.SaveChangesAsync();
         }
 
         public async Task<IEnumerable<Favorite>> GetAllByTagAsync(string tag)
